@@ -23,8 +23,11 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t step;
 	size_t i;
+	
+	if (size < 2)
+		return;
 
-	for (step = 0; step < size - 1;step++)
+	for (step = 0; step < size - 1; step++)
 	{
 		for (i = 0; i < size - step - 1; ++i)
 		{
