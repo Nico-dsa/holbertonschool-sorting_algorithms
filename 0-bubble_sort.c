@@ -1,11 +1,11 @@
 #include "sort.h"
 void swap(int *xp, int *yp)
 {
-	int *tmp;
+	int tmp;
 
-	*tmp = *xp;
+	tmp = *xp;
 	*xp = *yp;
-	*yp = *tmp;
+	*yp = tmp;
 }
 void bubble_sort(int *array, size_t size)
 {
@@ -16,7 +16,7 @@ void bubble_sort(int *array, size_t size)
 	{
 		for (i = 0; i < size - step - 1; ++i)
 		{
-			if (array[i] > array[i + 1])
+			if (array[i] > array[i - 1])
 			{
 				swap(&array[i],&array[i + 1]);
 			}
