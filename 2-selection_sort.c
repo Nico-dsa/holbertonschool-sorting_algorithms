@@ -3,7 +3,7 @@
 /**
  * selection_sort - sorts an array of integers in ascending order using
  * @array: array
- * @list: list
+ * @size: size
  */
 
 void selection_sort(int *array, size_t size)
