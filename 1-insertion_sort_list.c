@@ -2,7 +2,7 @@
 
 /**
  * insertion_sort_list - sorts a doubly linked list of integers ascending order
- * @list
+ * @list: list
  */
 
 void insertion_sort_list(listint_t **list)
@@ -24,7 +24,7 @@ void insertion_sort_list(listint_t **list)
 				tmp->next->prev = tmp->prev;
 			tmp->next = tmp->prev;
 			tmp->prev = tmp->prev->prev;
-			
+
 			if (tmp->prev != NULL)
 				tmp->prev->next = tmp;
 			tmp->next->prev = tmp;
