@@ -21,7 +21,7 @@ void swap(int *xp, int *yp)
  * @high: The ending index of the range to be partitioned.
  * @size: The size of the array.
  *
- * Return The final index of the pivot after partitioning.
+ * Return: The final index of the pivot after partitioning.
  */
 int partition(int *array, int low, int high, size_t size)
 {
